@@ -9,8 +9,9 @@ package electrodomestico;
  *
  * @author nico muller
  */
+class Electrodomestico {
 
-   public class Electrodomestico {
+
     private double precio;
     private String color;
     private char consumoEnergetico;
@@ -85,24 +86,27 @@ package electrodomestico;
     }
 
     public double precioFinal() {
-        double precioBase = 1000;
-        double precioFinal = precioBase;
+        double precioFinal = precio;
 
-        // Lógica para calcular los incrementos según el consumo energético
-        // y el peso del electrodoméstico
-
-        if (consumoEnergetico == 'A') {
-            precioFinal += 1000;
-        } else if (consumoEnergetico == 'B') {
-            precioFinal += 800;
-        } else if (consumoEnergetico == 'C') {
-            precioFinal += 600;
-        } else if (consumoEnergetico == 'D') {
-            precioFinal += 500;
-        } else if (consumoEnergetico == 'E') {
-            precioFinal += 300;
-        } else if (consumoEnergetico == 'F') {
-            precioFinal += 100;
+        switch (consumoEnergetico) {
+            case 'A':
+                precioFinal += 1000;
+                break;
+            case 'B':
+                precioFinal += 800;
+                break;
+            case 'C':
+                precioFinal += 600;
+                break;
+            case 'D':
+                precioFinal += 500;
+                break;
+            case 'E':
+                precioFinal += 300;
+                break;
+            case 'F':
+                precioFinal += 100;
+                break;
         }
 
         if (peso >= 1 && peso <= 19) {
@@ -118,5 +122,3 @@ package electrodomestico;
         return precioFinal;
     }
 }
-
-

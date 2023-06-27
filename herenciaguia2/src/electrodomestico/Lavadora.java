@@ -1,14 +1,16 @@
+package electrodomestico;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package electrodomestico;
 
 /**
  *
  * @author nico muller
  */
+
 public class Lavadora extends Electrodomestico{
 
     private double carga;
@@ -19,7 +21,7 @@ public class Lavadora extends Electrodomestico{
     }
 
     public Lavadora(double precio, String color, char consumoEnergetico, double peso, double carga) {
-        super(precio, color, consumoEnergetico, peso);
+        super (precio, color, consumoEnergetico, peso);
         this.carga = carga;
     }
 
@@ -48,3 +50,5 @@ public class Lavadora extends Electrodomestico{
         return precioFinal;
     }
 }
+
+

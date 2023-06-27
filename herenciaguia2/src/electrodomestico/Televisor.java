@@ -20,7 +20,7 @@ public class Televisor extends Electrodomestico{
     }
 
     public Televisor(double precio, String color, char consumoEnergetico, double peso, int resolucion, boolean sintonizadorTDT) {
-        super(precio, color, consumoEnergetico, peso);
+       super(precio,color,consumoEnergetico,peso);
         this.resolucion = resolucion;
         this.sintonizadorTDT = sintonizadorTDT;
     }
@@ -47,7 +47,7 @@ public class Televisor extends Electrodomestico{
         // Llenar los atributos propios del televisor (resolucion, sintonizadorTDT)
     }
 
-    @Override
+
   public double precioFinal() {
         double precioFinal = super.precioFinal();
 
