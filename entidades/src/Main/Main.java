@@ -8,7 +8,14 @@ import servicios.PersonaServicio;
 public class Main {
  
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
+         try {PersonaServicio personaS1 = null;
+        Persona persona11 = new Persona();
+        personaS1.esMayorDeEdad(persona11);
+            
+        } catch (Exception e){
+            System.out.println("el objeto es "+e.getMessage());
+        }
         PersonaServicio personaServicio = new PersonaServicio();
         Persona[] personas = new Persona[4];
         personas[0] = new Persona("Juan", 25, 'H', 70.0, 1.75);
